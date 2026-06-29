@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro de Estudos Mágico ⏳✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght=500;700&family=Plus+Jakarta+Sans:wght=400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <main class="w-full max-w-md relative">
+        <div class="vidro-magico rounded-[32px] p-6 text-center relative overflow-hidden">
+            <div class="flex justify-center mb-2">
+                <span class="text-4xl text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.8)] animar-lua inline-block">🌙</span>
+            </div>
+
+            <header class="mb-6">
+                <h1 class="font-magica text-2xl font-bold tracking-widest text-[#3a1a20]">COSMIC FOCUS</h1>
+                <p class="text-[10px] tracking-wider uppercase font-semibold text-[#703b44]">Meu Tempo Mágico de Estudo</p>
+            </header>
+
+            <div class="digital-display rounded-2xl py-6 px-4 mb-6 text-center">
+                <span id="visor-tempo" class="font-mono text-4xl sm:text-5xl font-bold text-white tracking-widest">
+                    00:00<span class="text-rose-400 text-2xl sm:text-3xl">.00</span>
+                </span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 mb-6">
+                <button id="btn-conquista" class="btn-controle bg-gradient-to-br from-amber-300 to-yellow-500 text-amber-950 font-semibold text-xs py-3 rounded-full border border-yellow-200 shadow shadow-amber-900/10 flex flex-col items-center justify-center" onclick="registrarEstrela(event)">
+                    <span>⭐</span>
+                    <span class="mt-0.5 uppercase tracking-tighter text-[9px]">Registrar</span>
+                </button>
+
+                <button id="btn-play-pause" class="btn-controle bg-gradient-to-br from-pink-400 to-rose-600 text-white font-bold text-sm py-3 rounded-full border border-rose-300 shadow-md shadow-rose-950/20 flex flex-col items-center justify-center" onclick="alternarCronometro(event)">
+                    <span id="icone-play-pause">▶️</span>
+                    <span id="texto-play-pause" class="mt-0.5 uppercase tracking-wider text-[9px]">Iniciar</span>
+                </button>
+
+                <button id="btn-reset" class="btn-controle bg-gradient-to-br from-indigo-300 to-purple-500 text-indigo-950 font-semibold text-xs py-3 rounded-full border border-purple-200 shadow shadow-purple-950/10 flex flex-col items-center justify-center" onclick="reiniciarCronometro(event)">
+                    <span>🔄</span>
+                    <span class="mt-0.5 uppercase tracking-tighter text-[9px]">Reiniciar</span>
+                </button>
+            </div>
+
+            <div class="bg-[#120524]/90 border border-pink-100/20 rounded-2xl p-4 text-left">
+                <h3 class="text-[11px] font-bold text-rose-300 uppercase tracking-widest mb-3 flex justify-between">
+                    <span>✨ Minhas Metas Alcançadas:</span>
+                    <span id="contador-estrelas" class="text-yellow-300 font-mono">0 ⭐</span>
+                </h3>
+                <div id="lista-conquistas" class="max-h-[120px] overflow-y-auto space-y-2 pr-1 text-xs text-slate-300 font-mono">
+                    <p id="msg-vazia" class="text-slate-500 italic text-center py-4">Nenhum ciclo registrado ainda. Vamos focar? ☕</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <span class="text-[9px] font-bold text-[#703b44] tracking-widest uppercase">✨ Poder do Prisma Lunar, transformar! ✨</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
