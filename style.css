@@ -1,0 +1,45 @@
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+background-image: linear-gradient(rgba(29, 13, 56, 0.7), rgba(119, 76, 143, 0.5)),
+url('Sailor-Moon-Background.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.font-magica { font-family: 'Cinzel', serif; }
+
+.vidro-magico {
+background: rgba(255, 235, 240, 0.75);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+border: 3px solid #ffe494;
+box-shadow: 0 10px 40px rgba(119, 76, 143, 0.3), 0 0 20px rgba(255, 228, 148, 0.3) inset;
+}
+
+.digital-display {
+background: rgba(18, 5, 36, 0.9);
+border: 2px solid #ffcbd5;
+box-shadow: inset 0 0 15px rgba(255, 77, 109, 0.5);
+text-shadow: 0 0 10px #ff4d6d, 0 0 20px #f5f251;
+}
+
+.btn-controle { transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.btn-controle:hover { transform: translateY(-3px) scale(1.05); }
+.btn-controle:active { transform: translateY(1px) scale(0.98); }
+
+@keyframes rotarLua { 0% { transform: rotate(0deg); } 50% { transform: rotate(10deg); } 100% { transform: rotate(0deg); } }
+.animar-lua { animation: rotarLua 6s ease-in-out infinite; }
+
+.faisca {
+position: absolute;
+pointer-events: none;
+font-size: 14px;
+animation: voar 0.8s ease-out forwards;
+z-index: 9999;
+}
+
+@keyframes voar {
+0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+100% { transform: translate(var(--x), var(--y)) scale(0.3) rotate(360deg); opacity: 0; }
+}
