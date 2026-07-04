@@ -17,3 +17,25 @@ HTML5: Estrutura limpa da aplicação e do painel de conquistas.
 CSS3 (com Tailwind CSS): Estilização moderna com efeito de vidro fosco (glassmorphism) e animações suaves de flutuação.
 
 JavaScript: Lógica de tempo (através de setInterval), controlo dos botões de iniciar/pausar e criação dinâmica do histórico de estrelas.
+
+🌐 Como Acessar o Cronômetro de Estudos Mágico
+
+Você pode testar o projeto de duas formas bem simples:
+
+⚡ 1. Acesso Online (Rápido)
+
+O projeto já está publicado no GitHub Pages! É só clicar no link abaixo para começar a focar nos seus estudos:
+
+👉 [Acessar o Cronômetro Mágico Online](https://tamaraferreira-dev.github.io/cronometro-magico/)
+
+💻 2. Rodar no seu Computador
+
+Se você quiser abrir o código e fazer as suas próprias alterações no VS Code:
+
+Faça o download (ou clone) deste repositório.
+
+Abra a pasta do projeto no seu VS Code.
+
+Clique com o botão direito no arquivo index.html e escolha Open with Live Server (Abrir com Live Server).
+
+O seu navegador vai abrir o projeto automaticamente
